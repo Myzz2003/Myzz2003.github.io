@@ -1,47 +1,91 @@
-<!-- This is the index of my HomePage -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yingzhe Mao</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        section {
+            margin: 2em 0;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Homepage</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
+    <div class="container">
+        <header>
+            <h1>Yingzhe Mao</h1>
+            <p>School of Electronics and Communication Engineering, Sun Yat-sen University</p>
+            <!-- <p>SECE,SYSU</p> -->
+        </header>
+        
         <section>
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
+            <p>I am a undergrauduate student with SECE,SYSU, and I am about to graduate in June, 2025. My research interest includes wireless communication theories and systems, deep learning for communication systems and semantic communications.</p>
         </section>
-
+        
+        <section class="photo">
+            <h2>Personal Photo</h2>
+            <img src="imgsrc.jpg" alt="Yingzhe Mao @ 2024">
+        </section>
+        
         <section>
-            <h2>My Projects</h2>
+            <h2>Publications</h2>
             <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
+                <li>Wang Z, Tang Y, <b>Mao Y</b>, et al. Deep Reinforcement Learning-aided Transmission Design for Energy-efficient Link Optimization in Vehicular Communications[J]. arXiv preprint arXiv:2404.12595, 2024.</li>
+                
+                <!-- Add more publications as needed -->
             </ul>
         </section>
-
+        
         <section>
-            <h2>Contact Me</h2>
-            <p>Include your contact information here.</p>
+            <h2>Awards</h2>
+            <ul>
+                <li>2023 SYSU Outstanding Student Shcolarship</li>
+                <!-- Add more awards as needed -->
+            </ul>
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2022 My Personal Homepage. All rights reserved.</p>
-    </footer>
+        
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <!-- <li>Project 1: Description</li>
+                <li>Project 2: Description</li>
+                <li>Project 3: Description</li> -->
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
