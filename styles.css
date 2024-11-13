@@ -1,0 +1,132 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #336699; /* 蓝色调 */
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar li :hover {
+    padding: 28px 5px;
+    background-color: #99ccff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: auto;
+    background-color: #336699;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 2px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    padding: 12px 2px;
+    background-color: #99ccff;
+}
+
+/* 下拉菜单显示时的样式 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #ff6666; /* 红色互补色 */
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #99ccff; /* 浅蓝背景 */
+    color: #333;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.name {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.name span {
+    color: #f8ff30; /* 互补色调的名字强调 */
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.hire-me-btn, .download-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.hire-me-btn {
+    background-color: #336699; /* 蓝色按钮 */
+    color: white;
+}
+
+.download-btn {
+    background-color: #e9670f; /* 互补色按钮 */
+    color: white;
+}
+
+/* Profile Image Styling */
+.hero-image img {
+    width: 300px;
+    border-radius: 10px;
+    /* 替换your-image.jpg为你自己的图片文件路径 */
+}

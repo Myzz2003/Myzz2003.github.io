@@ -3,89 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yingzhe Mao</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        section {
-            margin: 2em 0;
-        }
-        .photo {
-            text-align: center;
-        }
-        .photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 0.5em;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Yingzhe Mao</h1>
-            <p>School of Electronics and Communication Engineering, Sun Yat-sen University</p>
-            <!-- <p>SECE,SYSU</p> -->
-        </header>
-        
-        <section>
-            <h2>About Me</h2>
-            <p>I am a undergrauduate student with SECE,SYSU, and I am about to graduate in June, 2025. My research interest includes wireless communication theories and systems, deep learning for communication systems and semantic communications.</p>
-        </section>
-        
-        <section class="photo">
-            <h2>Personal Photo</h2>
-            <img src="imgsrc.jpg" alt="Yingzhe Mao @ 2024">
-        </section>
-        
-        <section>
-            <h2>Publications</h2>
-            <ul>
-                <li>Wang Z, Tang Y, <b>Mao Y</b>, et al. Deep Reinforcement Learning-aided Transmission Design for Energy-efficient Link Optimization in Vehicular Communications[J]. arXiv preprint arXiv:2404.12595, 2024.</li>
-                
-                <!-- Add more publications as needed -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Awards</h2>
-            <ul>
-                <li>2023 SYSU Outstanding Student Shcolarship</li>
-                <!-- Add more awards as needed -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <!-- <li>Project 1: Description</li>
-                <li>Project 2: Description</li>
-                <li>Project 3: Description</li> -->
-                <!-- Add more projects as needed -->
-            </ul>
-        </section>
-    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+            <a href="#about" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="#about/paper1">链接1</a>
+                    <a href="#about/paper2">链接2</a>
+                    <a href="#about/paper3">链接3</a>
+                </div>
+            </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="contact-btn">Quick Contact</button>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1 class="name">My Name <br><span>Yingzhe Mao</span></br></h1>
+            <p class="description">A creative and clean design to showcase your portfolio with style.</p>
+            <button class="hire-me-btn">Hire Me</button>
+            <button class="download-btn">Download CV</button>
+        </div>
+        <!-- Placeholder for the profile image -->
+        <div class="hero-image">
+            <img src="./imgsrc.jpg" alt="Profile Image">
+            <!-- 替换your-image.jpg为你自己的图片文件路径 -->
+            <script src="transparent.js"></script>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
