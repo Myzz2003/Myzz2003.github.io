@@ -11,7 +11,7 @@ const links = Array.from(document.querySelectorAll('.nav-links a, .dropdown-menu
 links.forEach(link => {
     link.addEventListener('click', function(event) {
         // 阻止默认的链接跳转行为
-        event.preventDefault();
+        // event.preventDefault();
 
         // 获取链接的href属性值
         const contentId = this.getAttribute('href').substring(1);
