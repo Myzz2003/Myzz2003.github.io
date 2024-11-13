@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Yingzhe's Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">MyPortfolio</div>
+        <div class="logo"><span>Yingzhe</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li class="dropdown">
-            <a href="#about" class="dropbtn">About</a>
-                <div class="dropdown-content">
-                    <a href="#about/paper1">链接1</a>
-                    <a href="#about/paper2">链接2</a>
-                    <a href="#about/paper3">链接3</a>
-                </div>
+                <a href="#about" class="dropdown-toggle">About</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#about#cv">Curriculum Vitae</a></li>
+                    <li><a href="#about#rp">Research Proposal</a></li>
+                    <li><a href="#values">Values</a></li>
+                </ul>
             </li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -31,15 +32,17 @@
     <section class="hero-section" id="home">
         <div class="hero-content">
             <h1 class="name">My Name <br><span>Yingzhe Mao</span></br></h1>
-            <p class="description">A creative and clean design to showcase your portfolio with style.</p>
+            <p class="description" id = "main_description">
+                A creative and clean design to showcase your portfolio with style.
+            </p>
             <button class="hire-me-btn">Hire Me</button>
             <button class="download-btn">Download CV</button>
         </div>
         <!-- Placeholder for the profile image -->
         <div class="hero-image">
-            <img src="./imgsrc.jpg" alt="Profile Image">
+            <!-- <img src="./imgsrc.jpg" alt="Profile Image"> -->
             <!-- 替换your-image.jpg为你自己的图片文件路径 -->
-            <script src="transparent.js"></script>
+            <!-- <script src="transparent.js"></script> -->
         </div>
     </section>
 
