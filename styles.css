@@ -127,7 +127,12 @@
 }
 
 .name span {
-    color: #336699; /* 蓝色调的名字强调 */
+    color: #ff6666; /* 蓝色调的名字强调 */
+    transition: color 1s ease;
+}
+
+.name span:hover {
+    color: yellow;
 }
 
 .description {
@@ -141,6 +146,8 @@
     border: none;
     cursor: pointer;
     margin-right: 10px;
+    border-radius: 0px;
+    transition: border-radius 0.5s ease;
 }
 
 .hire-me-btn {
@@ -148,9 +155,17 @@
     color: white;
 }
 
+.hire-me-btn:hover {
+    border-radius: 20px;
+}
+
 .download-btn {
     background-color: #ff6666; /* 互补色按钮 */
     color: white;
+}
+
+.download-btn:hover {
+    border-radius: 20px;
 }
 
 /* Profile Image Styling */
@@ -172,4 +187,37 @@
 .logo span {
     color: yellow;
     /* padding: 10px; */
+}
+
+.topic-content {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: black;
+    background-color: #99ccff;
+    padding: 20px;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.topic-content:hover {
+    background-color: #336699;
+    color: white;
+}
+
+.topic {
+    display: flexbox;
+    flex-grow: 29;
+    color: yellow;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+}
+
+.main_frame {
+    background-color: #336699;
+    min-height: 100vh;
 }

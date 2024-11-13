@@ -21,30 +21,63 @@
                     <li><a href="#values">Values</a></li>
                 </ul>
             </li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#serv#college">College</a></li>
+                    <li><a href="#serv#social">Social</a></li>
+                </ul>
+            </li>
+            <li><a href="publications.html" target="_blank">Publications</a></li>
+            <li class="dropdown">
+                <a href="#contact" class="dropdown-toggle">Contact</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#con#email">E-Mail</a></li>
+                    <li><a href="#con#wechat">WeChat</a></li>
+                </ul>
+            </li>
         </ul>
         <button class="contact-btn">Quick Contact</button>
     </nav>
 
     <!-- Main Content -->
-    <section class="hero-section" id="home">
-        <div class="hero-content">
-            <h1 class="name">My Name <br><span>Yingzhe Mao</span></br></h1>
-            <p class="description" id = "main_description">
-                A creative and clean design to showcase your portfolio with style.
-            </p>
-            <button class="hire-me-btn">Hire Me</button>
-            <button class="download-btn">Download CV</button>
-        </div>
-        <!-- Placeholder for the profile image -->
-        <div class="hero-image">
-            <!-- <img src="./imgsrc.jpg" alt="Profile Image"> -->
-            <!-- 替换your-image.jpg为你自己的图片文件路径 -->
-            <!-- <script src="transparent.js"></script> -->
-        </div>
-    </section>
+    <div class="main_frame">
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1 class="name">My Name <br><span>Yingzhe Mao</span></br></h1>
+                <p class="description">
+                    A creative and clean design to showcase your portfolio with style.
+                </p>
+                <button class="hire-me-btn">Hire Me</button>
+                <button class="download-btn">Download CV</button>
+            </div>
+            <!-- Placeholder for the profile image -->
+            <div class="hero-image">
+                <img src="./imgsrc.jpg" alt="Profile Image">
+                <!-- 替换your-image.jpg为你自己的图片文件路径 -->
+                <!-- <script src="transparent.js"></script> -->
+            </div>
+        </section>
+    
+        <!-- Selected Topic -->
+        <section class="topic">
+            <div class="topic-content">
+                <h1 class="topic">
+                    <p class="topic-description" id="topic_title">
+                        Status
+                    </p>
+                </h1>
+                <p class="topic-description" id="topic_content">
+                    Still working hard to earn my bachelor's degree...
+                </p>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer">
+                Sun Yat-sen University @ 2024
+            </div>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
