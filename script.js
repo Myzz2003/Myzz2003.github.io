@@ -1,4 +1,4 @@
-function dropdown(element, event) {
+function dropdown_animation(element, event) {
     if (event === 'enter') {
         element.style.height = 'auto';
         element.style.overflow = 'visible';
@@ -20,18 +20,38 @@ function dropdown(element, event) {
     }
 }
 
-document.querySelectorAll('.dropdown-menu').forEach(function (element) {
-    element.style.transition = 'all 1s ease';
-    element.addEventListener('mouseenter', function (e) {
-        dropdown(element, 'enter');
+function dropdown_ctrl(dropdown_menu) {
+    document.querySelectorAll(dropdown_menu).forEach(function (element) {
+        element.style.transition = 'all 1s ease';
+        element.addEventListener('mouseenter', function (e) {
+            dropdown_animation(element, 'enter');
+        });
+        element.addEventListener('click', function (e) {
+            dropdown_animation(element, 'enter');
+        });
+        element.addEventListener('mouseleave', function (e) {
+            dropdown_animation(element, 'leave');
+        });
     });
-    element.addEventListener('click', function (e) {
-        dropdown(element, 'enter');
+    
+}
+
+function button_react(button_name) {
+    document.querySelectorAll(button_name).forEach(function (element) {
+        element.style.transition = 'all 0.5s ease';
+        element.addEventListener('mouseenter', function (e) {
+            element.style.backgroundColor = '#1d3f54';
+            element.style.color = '#e5c409';
+            element.style.borderRadius = '5px';
+        });
+        element.addEventListener('mouseleave', function (e) {
+            element.style.backgroundColor = '#e5c409';
+            element.style.color = '#1d3f54';
+            element.style.borderRadius = '5px';
+        });
     });
-    element.addEventListener('mouseleave', function (e) {
-        dropdown(element, 'leave');
-    });
-});
+}
+
 
 document.querySelectorAll('.type-writer').forEach(function (element) {
     element.addEventListener('mouseenter', function (e) {
@@ -50,3 +70,7 @@ document.querySelectorAll('.cards').forEach(function (element) {
         element.style.backgroundColor = 'rgba(255,255,255,0.4)';
     });
 });
+
+button_react('.cite-btn');
+button_react('.read-btn');
+dropdown_ctrl('.dropdown-menu');
