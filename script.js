@@ -1,20 +1,35 @@
-document.querySelectorAll('.dropdown-menu').forEach(function (element) {
-    element.style.transition = 'all 1s ease';
-    element.addEventListener('mouseenter', function (e) {
+function dropdown(element, event) {
+    if (event === 'enter') {
         element.style.height = 'auto';
         element.style.overflow = 'visible';
         element.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         element.style.padding = '10px';
         element.style.borderRadius = '15px';
         element.style.border = '1px solid #1d3f54';
-    });
-    element.addEventListener('mouseleave', function (e) {
+    }
+    else if (event === 'leave') {
         element.style.height = '50px';
         element.style.overflow = 'hidden';
         element.style.backgroundColor = '#1d3f54';
         element.style.padding = '0';
         element.style.borderRadius = '0';
         element.style.border = 'none';
+    }
+    else {
+        console.error('Invalid event');
+    }
+}
+
+document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+    element.style.transition = 'all 1s ease';
+    element.addEventListener('mouseenter', function (e) {
+        dropdown(element, 'enter');
+    });
+    element.addEventListener('click', function (e) {
+        dropdown(element, 'enter');
+    });
+    element.addEventListener('mouseleave', function (e) {
+        dropdown(element, 'leave');
     });
 });
 
