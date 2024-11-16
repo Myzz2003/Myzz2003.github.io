@@ -3,48 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yingzhe's Publications</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Publications</title>
+    <link rel="stylesheet" href="publication_styles.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo"><span>Yingzhe</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-                <a href="#about" class="dropdown-toggle">About</a>
-                <ul class="dropdown-menu">
-                    <li><a href="./index.html">Curriculum Vitae</a></li>
-                    <li><a href="./index.html">Research Proposal</a></li>
-                    <li><a href="./index.html#values">Values</a></li>
+    <div class="container">
+        <div class="nav">
+            <div class = "logo">
+                <h1><a href="./index.html">Yingzhe</a></h1>
+            </div>
+            <div class="dropdown-menu">
+                <h3><div class = "dropdown-menu-subclass">About</div></h3>
+                <ul>
+                    <li><a href="./about/cv.html">Curriculum
+                          Vitae</a></li>
+                    <li><a href="./about/rp.html">Research Proposal</a></li>
+                    <li><a href="./about/pv.html">Personal Values</a></li>
                 </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#services" class="dropdown-toggle">Services</a>
-                <ul class="dropdown-menu">
-                    <li><a href="./index.html#serv#college">College</a></li>
-                    <li><a href="./index.html#serv#social">Social</a></li>
+            </div>
+            <div class="dropdown-menu">
+                <h3><div class = "dropdown-menu-subclass">Service</div></h3>
+                <ul>
+                    <li><a href="./service/school.html">At School</a></li>
+                    <li><a href="./service/social.html">Social</a></li>
                 </ul>
-            </li>
-            <li><a href="#pubs">Publications</a></li>
-            <li class="dropdown">
-                <a href="#contact" class="dropdown-toggle">Contact</a>
-                <ul class="dropdown-menu">
-                    <li><a href="./index.html#con#email">E-Mail</a></li>
-                    <li><a href="./index.html#con#wechat">WeChat</a></li>
+            </div>
+            <div class="dropdown-menu">
+                <h3><a href="./publications.html"><div class = "dropdown-menu-subclass">Publications</div></a></h3>
+            </div>
+            <div class="dropdown-menu">
+                <h3><div class = "dropdown-menu-subclass">Contact</div></h3>
+                <ul>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">WeChat</a></li>
                 </ul>
-            </li>
-        </ul>
-        <button class="contact-btn">Quick Contact</button>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="main_frame">
-        
+            </div>
+        </div>
+        <div class="content">
+            <h1><span class = "type-writer">Yingzhe's publications.</span></h1>
+            <div class="pub-container">
+                <div class="pub-box">
+                    <div class="pub-info">
+                        Auto-encoders in PHY: Principles and Challenges
+                        <p class="pub-info-detail">Authors: Yingzhe Mao, Yanqun Tang, Zhengpeng Wang and Jingliang He</p>
+                        <p class="pub-info-detail">Conference Paper: WCSP24</p>
+                    </div>
+                    <div class="pub-status">
+                        <button class="read-btn">Read</button>
+                        <button class="cite-btn">Cite</button>
+                    </div>
+                </div>
+                <div class="pub-box">
+                    <div class="pub-info">
+                        Example2
+                        <p class="pub-info-detail">details</p>
+                    </div>
+                    <div class="pub-status">
+                        <button class="read-btn">Read</button>
+                        <button class="cite-btn">Cite</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
