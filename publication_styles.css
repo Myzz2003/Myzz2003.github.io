@@ -90,7 +90,8 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     /* add linear gradient color */
-    background: linear-gradient(90deg, #1d3f54, #e5c409);
+    /* background: linear-gradient(90deg, #1d3f54, #e5c409); */
+    background-image: url('./bg.svg');
     border-left: 1px solid white;
 }
 

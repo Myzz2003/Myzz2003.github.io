@@ -71,6 +71,12 @@ document.querySelectorAll('.cards').forEach(function (element) {
     });
 });
 
+// get the absolute size of .content class and log it to the console
+var content = document.querySelector('.content');
+var content_rect = content.getBoundingClientRect();
+console.log(content_rect);
+
+
 button_react('.cite-btn');
 button_react('.read-btn');
 dropdown_ctrl('.dropdown-menu');

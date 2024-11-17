@@ -66,12 +66,14 @@ function card_react(cards) {
     document.querySelectorAll(cards).forEach(function (element) {
         element.style.transition = 'all 0.7s ease';
         element.addEventListener('mouseenter', function (e) {
-            element.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            element.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
             element.style.padding = '10px';
+            element.style.border = '2px solid #e5c409';
         });
         element.addEventListener('mouseleave', function (e) {
-            element.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+            element.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
             element.style.padding = '0';
+            element.style.border = 'none';
         });
     });
 }

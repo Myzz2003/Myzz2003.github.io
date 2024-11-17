@@ -14,7 +14,7 @@ body, html {
     width: 100%;
     background-color: #1d3f54;
     color: #e5c409;
-    padding: 10px;
+    padding: 1px;
     box-sizing: border-box;
     /* add a border line at the bottom */
     border-bottom: 1px solid white;
@@ -86,7 +86,9 @@ body, html {
     padding: 20px;
     box-sizing: border-box;
     /* add linear gradient color */
-    background: linear-gradient(90deg, #1d3f54, #e5c409);
+    /* background: linear-gradient(90deg, #1d3f54, #e5c409); */
+    /* use bg.svg as background */
+    background-image: url('./bg.svg');
     border-left: 1px solid white;
 }
 
