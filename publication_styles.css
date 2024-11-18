@@ -124,6 +124,7 @@ body, html {
     background-color: rgba(40, 200, 255, 0.3);
     padding: 10px;
     border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
 .pub-box:hover {
