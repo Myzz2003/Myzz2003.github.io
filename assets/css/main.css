@@ -2239,20 +2239,21 @@ body.is-preload #wrapper {
 	position: absolute;
 	right: 0;
 	top: 50%;
-	margin-top: -1.375em;
-	width: 2.75em;
-	height: 2.75em;
+	margin-top: -1.125em;
+	width: 2.25em;
+	height: 2.25em;
 	background: #000;
 	background: rgba(0, 0, 0, 0.75);
 	color: #ffffff;
 	text-align: center;
-	line-height: 2.75em;
+	line-height: 2.25em;
 	font-size: 1.5em;
 	z-index: 1;
 	-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
 	-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
 	-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
 	transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+	border-radius: 10px 0 0 10px;
 }
 
 #main>.panel.intro .pic .arrow:before {
@@ -2267,7 +2268,7 @@ body.is-preload #wrapper {
 }
 
 #main>.panel.intro .pic:hover .arrow {
-	width: 3em;
+	width: 2.5em;
 	padding-right: 0.25em;
 }
 
