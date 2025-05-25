@@ -2019,7 +2019,7 @@ ul.actions li:first-child {
     line-height: 2.25em; /* 保持原有的行高，这也将影响框的实际高度 */
 
     /* 5. 可选：设置最小宽度，避免内容过少时框太小 */
-    min-width: 4em; /* 根据需要调整，可以参考原有的5.5em，但要考虑padding */
+    min-width: 5em; /* 根据需要调整，可以参考原有的5.5em，但要考虑padding */
 
     opacity: 0;
     -moz-transition: opacity .25s ease-in-out;
@@ -2143,12 +2143,18 @@ body.is-preload #wrapper {
 	overflow: hidden;
 	width: 100%;
 	background: #ffffff;
+	border: #ffffff solid 1px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 	-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 }
+
 
 #main>.panel {
 	-moz-transition: opacity 0.25s ease-in-out;
