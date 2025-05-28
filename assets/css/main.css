@@ -169,8 +169,61 @@ textarea {
 	align-items: stretch;
 }
 
-.row>* {
+.row.itembox {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 	box-sizing: border-box;
+	align-items: stretch;
+	justify-content: left;
+	min-height: 7em;
+	margin-top: 0;
+	margin-left: 0;
+	/* padding: 0 1.25em;
+	border-bottom: solid 1px #101191; */
+}
+
+.row.itembox>div {
+	padding: 0 1.25em;
+	border-bottom: dashed 1px #101191;
+}
+
+.row.itembox a {
+	box-sizing: border-box;
+	padding: 0;
+	margin-left: 0;
+}
+
+.row.itembox.left {
+	width: 40%;
+	align-items: center;
+	border: dashed 1px #101191;
+	border-radius: 10px 0 0 10px;
+	padding: 8px;
+}
+
+.row.itembox.right {
+	width: 60%;
+}
+
+.row>h3 {
+	width: 100%;
+	/* min-height: 2.25em; */
+	margin-top: 0.5em;
+	vertical-align: middle;
+	padding: 0 1.25em;
+}
+
+.row>* {
+	box-sizing: content-box;
+}
+
+.row img {
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .row.gtr-uniform>*> :last-child {
@@ -1408,7 +1461,7 @@ body {
      * 1. 半透明的线性渐变在最上层 (作为遮罩)
      * 2. habg.jpg 在下层 (作为底部背景)
      */
-	 
+
 	/* background-image: linear-gradient(to right top,
 			rgba(118, 227, 244, 0.5),
 			rgba(102, 234, 225, 0.5),
@@ -1416,12 +1469,12 @@ body {
 			rgba(153, 237, 157, 0.5),
 			rgba(198, 233, 121, 0.5)
 		), */
-		background-image: linear-gradient(to top,
-					rgba(114, 198, 235, 0.6), rgba(105, 180, 222, 0.6), rgba(97, 163, 208, 0.6), rgba(91, 145, 193, 0.6), rgba(86, 128, 178, 0.6), rgba(80, 116, 167, 0.6), rgba(74, 104, 155, 0.6), rgba(69, 92, 144, 0.6), rgba(61, 82, 134, 0.6), rgba(54, 71, 125, 0.6), rgba(47, 61, 115, 0.6), rgba(40, 51, 105, 0.6)
-		),
-		url("images/overlay.png"),
-		url("images/habg.jpg");
-
+	background-image: linear-gradient(to top,
+			rgba(114, 198, 235, 0.6), rgba(105, 180, 222, 0.6), rgba(97, 163, 208, 0.6), rgba(91, 145, 193, 0.6), rgba(86, 128, 178, 0.6), rgba(80, 116, 167, 0.6), rgba(74, 104, 155, 0.6), rgba(69, 92, 144, 0.6), rgba(61, 82, 134, 0.6), rgba(54, 71, 125, 0.6), rgba(47, 61, 115, 0.6), rgba(40, 51, 105, 0.6)),
+			url("images/overlay.png"),
+			url("images/habg.jpg");
+			
+	backdrop-filter: blur(3px);
 	background-repeat: no-repeat, no-repeat;
 	background-size: 100% 100%, 100% 100%;
 
@@ -1448,7 +1501,7 @@ textarea,
 select {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
-	color: #777777;
+	color: #333333;
 	font-size: 20pt;
 	line-height: 1.75em;
 }
@@ -1690,7 +1743,7 @@ header {
 
 header>p {
 	margin: 0.5em 0 0 0;
-	color: #aaa;
+	color: #323232;
 }
 
 @media screen and (max-width: 736px) {
@@ -2149,7 +2202,7 @@ body.is-preload #wrapper {
 	-webkit-border-radius: 10px;
 	-ms-border-radius: 10px;
 	border-radius: 10px;
-	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 15px 15px 25px 5px rgba(40, 40, 40, 0.15);
 	-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2463,4 +2516,37 @@ body.is-preload #wrapper {
     .cv-table dd:last-child {
         padding-bottom: 0;
     }
+}
+
+/* Custom Button div styles */
+.button-div {
+	font-family: 'PingFang SC', 'Source Han Sans SC', 'Source Han Sans CN', sans-serif;
+	margin-top: -0.5em;
+	margin-bottom: 0.5em;
+	width: 90%;
+	height: 2.5em;
+	/* margin-left: 30%;
+	margin-right: 30%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to top,
+			rgba(80, 116, 167, 0.9), rgba(74, 104, 155, 0.9), rgba(69, 92, 144, 0.9), rgba(61, 82, 134, 0.9), rgba(54, 71, 125, 0.9), rgba(47, 61, 115, 0.9), rgba(40, 51, 105, 0.9));
+	color: #ffffff;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.button-div a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+.button-div a:hover {
+	background-image: linear-gradient(to right, #f9f0ae, #f9e78d, #fade6a, #fcd344, #ffc800);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 600;
 }
